@@ -13,7 +13,7 @@ class ChatApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        textTheme: GoogleFonts.almaraiTextTheme(Theme.of(context).textTheme),
+        textTheme: GoogleFonts.interTextTheme(Theme.of(context).textTheme),
       ),
       home: const SplashScreen(),
     );

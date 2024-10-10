@@ -3,6 +3,7 @@ import 'package:chat_app_task1/core/themes/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:loading_indicator/loading_indicator.dart';
 
+// ignore: non_constant_identifier_names
 Scaffold SplashBody() {
     return Scaffold(
       backgroundColor: Colors.white,
