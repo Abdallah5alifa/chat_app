@@ -64,8 +64,8 @@ class _LoginBodyState extends State<LoginBody> {
                       MaterialPageRoute(builder:(context)=> const HomeView()));
                   },
                   ),
-                  const SizedBox(height: 20,),
-                  const RegisterRow()  
+                const SizedBox(height: 20,),
+                const RegisterRow()  
               ],
             ),
           ),
