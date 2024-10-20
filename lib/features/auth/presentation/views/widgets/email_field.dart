@@ -14,6 +14,7 @@ class EmailField extends StatelessWidget {
       label: 'Enter Your Email',
       hint: 'Your Email',
       prefix: Icons.email_outlined,
+      // ignore: body_might_complete_normally_nullable
       validate: (value) {
         if(value!.isEmpty){
           return "Email must be not empity";
