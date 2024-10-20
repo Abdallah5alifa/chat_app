@@ -1,10 +1,14 @@
+import 'package:chat_app_task1/features/auth/presentation/views/widgets/signup_body.dart';
 import 'package:flutter/material.dart';
 
-class Singup extends StatelessWidget {
-  const Singup({super.key});
+class SingupScreen extends StatelessWidget {
+  const SingupScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return  Scaffold(
+      resizeToAvoidBottomInset: true,
+      body: SignUpBody(),
+    );
   }
 }

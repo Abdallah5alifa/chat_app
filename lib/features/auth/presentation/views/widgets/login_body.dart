@@ -1,3 +1,4 @@
+import 'package:chat_app_task1/features/auth/presentation/views/views_files/singup_view.dart';
 import 'package:chat_app_task1/features/auth/presentation/views/widgets/email_field.dart';
 import 'package:chat_app_task1/features/auth/presentation/views/widgets/login_button.dart';
 import 'package:chat_app_task1/features/auth/presentation/views/widgets/login_title.dart';
@@ -19,12 +20,10 @@ class LoginBody extends StatefulWidget {
 }
 
 class _LoginBodyState extends State<LoginBody> {
+
   TextEditingController emaillController = TextEditingController();
-
-  var formKey = GlobalKey<FormState>();
-
   TextEditingController passwordController = TextEditingController();
-
+  var formKey = GlobalKey<FormState>();
   bool isPasswordVisible = false;
 
   @override
@@ -40,7 +39,9 @@ class _LoginBodyState extends State<LoginBody> {
               children: [
                 const LogoWidget(),
                 const SizedBox(height: 20,),
-                const LoginTitle(),
+                const AuthTitle(
+                  textTitle: 'Log in to your account',
+                 ),
                 const SizedBox(height: 20,),
                 EmailField(emailController: emaillController,),
                 const SizedBox(height: 20,),
@@ -65,7 +66,15 @@ class _LoginBodyState extends State<LoginBody> {
                   },
                   ),
                 const SizedBox(height: 20,),
-                const RegisterRow()  
+                RegisterOrLogInRow(
+                  textMsg: 'Don\’t have an account?',
+                  textFunction: 'Register now',
+                  func: (){
+                    Navigator.push(context,
+                     MaterialPageRoute(builder: (context)=>const SingupScreen(),
+                     ));
+                  },
+                )  
               ],
             ),
           ),
