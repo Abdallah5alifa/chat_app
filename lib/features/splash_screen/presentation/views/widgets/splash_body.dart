@@ -25,7 +25,7 @@ Scaffold SplashBody() {
                   ),
                   const SizedBox(height: 170,),
                    Text("The best chat app of this century",
-                  style: TextStyleApp().textStyle22,
+                  style: TextStyleApp().textStyle24,
                   ),
                   const SizedBox(height: 60,),
                   const SizedBox(

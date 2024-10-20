@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:chat_app_task1/features/auth/presentation/views/views_files/login_screen.dart';
+import 'package:chat_app_task1/features/auth/presentation/views/views_files/login_view.dart';
 import 'package:chat_app_task1/features/splash_screen/presentation/views/widgets/splash_body.dart';
 import 'package:flutter/material.dart';
 

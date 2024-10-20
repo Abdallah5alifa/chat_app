@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 class TextStyleApp{
 
 
-TextStyle textStyle22 = const TextStyle(
+TextStyle textStyle24 = const TextStyle(
   fontSize: 24,
-  fontWeight: FontWeight.w400
+  fontWeight: FontWeight.bold
 );
 
 TextStyle textStyle30 = const TextStyle(
@@ -13,6 +13,9 @@ TextStyle textStyle30 = const TextStyle(
   fontWeight: FontWeight.bold
 );
 
-
+TextStyle textStyle14 = const TextStyle(
+  fontSize: 14,
+  fontWeight: FontWeight.bold
+);
 
 }
