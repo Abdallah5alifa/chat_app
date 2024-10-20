@@ -2,6 +2,7 @@ import 'package:chat_app_task1/core/themes/colors/colors.dart';
 import 'package:chat_app_task1/core/themes/styles.dart';
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class RegisterOrLogInRow extends StatelessWidget {
 
   final String textMsg;
