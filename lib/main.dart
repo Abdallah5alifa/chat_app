@@ -16,8 +16,8 @@ class ChatApp extends StatelessWidget {
       theme: ThemeData(
         textTheme: GoogleFonts.interTextTheme(Theme.of(context).textTheme),
       ),
-      //home: const SplashScreen(),
-      home: const HomeView(),
+      home: const SplashScreen(),
+      //home: const HomeView(),
     );
   }
 }
