@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 
 // ignore: non_constant_identifier_names
-AppBar HomeAppbar(){
+AppBar HomeAppbar(BuildContext context ){
   return AppBar(
     title: Text(
       'WhatsUp',
@@ -17,20 +17,21 @@ AppBar HomeAppbar(){
       PopupMenuButton(
         onSelected: (value) {
           // your logic
+          Navigator.pushNamed(context, value.toString());
         },
-        itemBuilder: (BuildContext bc) {
+        itemBuilder: (BuildContext context) {
           return const [
             PopupMenuItem(
               child: Text("New Group"),
-              //value: '/hello',
+              //value: '/newgroub',
             ),
             PopupMenuItem(
               child: Text("Profile"),
-              //value: '/about',
+              value: '/profile',
             ),
             PopupMenuItem(
               child: Text("Setting"),
-              //value: '/contact',
+              //value: '/setting',
             )
           ];
         },
