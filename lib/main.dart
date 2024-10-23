@@ -1,3 +1,4 @@
+import 'package:chat_app_task1/features/home_screen/presentation/views/home_view.dart';
 import 'package:chat_app_task1/features/splash_screen/presentation/views/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -15,7 +16,8 @@ class ChatApp extends StatelessWidget {
       theme: ThemeData(
         textTheme: GoogleFonts.interTextTheme(Theme.of(context).textTheme),
       ),
-      home: const SplashScreen(),
+      //home: const SplashScreen(),
+      home: const HomeView(),
     );
   }
 }
