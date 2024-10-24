@@ -28,7 +28,7 @@ Widget defaulTextFormWidget({
         icon: Icon(suffix,),
         ) :null,
       border: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(30),
+        borderRadius: BorderRadius.circular(35),
       ),
       focusedBorder:const OutlineInputBorder(
         borderSide: BorderSide(color: ColorApp.primaryColor,width: 2.0)
