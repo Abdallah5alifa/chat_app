@@ -39,7 +39,7 @@ class CustomButton extends StatelessWidget {
             backgroundColor: ColorApp.primaryColor,
             padding: const EdgeInsets.symmetric(horizontal: 43,vertical: 12),
             shape: RoundedRectangleBorder(
-              borderRadius: borderRadios ?? BorderRadius.circular(24),
+              borderRadius: borderRadios ?? BorderRadius.circular(35),
             ),
           ),
           child: Row(
