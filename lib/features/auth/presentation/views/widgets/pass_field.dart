@@ -25,6 +25,7 @@ class PasswordField extends StatelessWidget {
       isObscure: !isPasswordVisibility,
       suffix: isPasswordVisibility ? Icons.visibility : Icons.visibility_off,
       pressed: toogleVisibility,
+      // ignore: body_might_complete_normally_nullable
       validate: (value) {
         if(value!.isEmpty){
           return "Password is wrong";
